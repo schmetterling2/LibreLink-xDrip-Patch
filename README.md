@@ -1,3 +1,113 @@
+<u>Nota legale:</u> Soltanto per i residenti della comunità europea [DIRETTIVA 2009/24/CE DEL PARLAMENTO EUROPEO E DEL CONSIGLIO](https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=celex:32009L0024).
+
+## Installare un sotto-sistema Linux in Windows.
+
+Nella lente di ingrandimento a sinistra dal menu di Windows, digitare:
+
+`Attiva o disattiva funzionalità di Windows`
+
+![](Documents/images/Picture1.png)
+
+Aprire il programma e abilitare: Sottosistema Windows for Linux.
+
+![](Documents/images/Picture2.png)
+
+Fare `OK` e riavviare il computer.
+
+Dal Microsoft store, cercare e installare Debian
+
+![](Documents/images/Picture3.png)
+
+![](Documents/images/Picture4.png)
+
+Cliccare `Ottieni`, e `Apri`
+
+A la prima apertura della finestra di Debian, impostare un nome utente e una password.
+
+![](Documents/images/Picture5.png)
+
+Nota: ogni commando in Debian va seguito dal tasto Invio.
+
+Segnare questi dati per non perderli. Se non li ritrovate, disinstallare Debian e reinstallare per ricominciare da capo.
+
+Digitare `sudo apt-get update` nella finestra Debian.
+
+Digitare la propria password quando richiesta.
+
+![](Documents/images/Picture6.png)
+
+![](Documents/images/Picture7.png)
+
+Installare il cliente Github con il commando `sudo apt-get install git`
+
+![](Documents/images/Picture8.png)
+
+Digitare `Y` e premere Invio
+
+![](Documents/images/Picture9.png)
+
+![](Documents/images/Picture10.png)
+
+## Clonare il repository Github
+
+Clonare il repository Github schmetterling2, oppure TinoKossmann se il primo non fosse disponibile con il commando seguente:
+
+`git clone  https://github.com/schmetterling2/LibreLink-xDrip-Patch`
+
+> Se questo repository non è più disponibile chiederà una password
+> In questo caso, invio, invio:
+>
+> ![](Documents/images/Picture11.png)
+>
+> E riprovare con:
+>
+> `git clone https://github.com/TinoKossmann/LibreLink-xDrip-Patch`
+
+Normalmente dovreste visualizzare questo:
+
+![](Documents/images/Picture12.png)
+
+Entrare nella cartella digitando: `cd LibreLink-xDrip-Patch`\
+*Trucco: scrivere **cd Li** e premere il tasto Tab*
+
+![](Documents/images/Picture13.png)
+
+Installare strumenti supplementari con: `./install-apt-dependencies.sh`
+
+Digitare la password quando richiesta.
+
+![](Documents/images/Picture14.png)
+
+Digitare `Y`, premere invio.\
+Aspettare, ci vorrà un po'.
+
+![](Documents/images/Picture14.png)
+
+## Scaricare l'app
+
+Digitare `./download.sh`
+
+![](Documents/images/Picture15.png)
+
+![](Documents/images/Picture16.png)
+
+## Modificare l'app
+
+Digitare `./patch.sh`
+
+![](Documents/images/Picture18.png)
+
+![](Documents/images/Picture19.png)
+
+Fatto. Potete digitare exit per chiudere Debian.
+
+Troverete l'app modificata nella cartella `C:\\APK` del vostro computer.
+
+![](Documents/images/Picture20.png)
+
+<u>Nota legale:</u>  la diffusione di questa app modificata **<u>non è autorizzata</u>**
+
+
 # Anleitung zum Patchen der App "LibreLink" unter Windows #
 
 **Grundsätzliches:**
